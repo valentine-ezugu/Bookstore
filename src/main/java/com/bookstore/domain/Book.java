@@ -32,6 +32,7 @@ public class Book {
 
     @Column(columnDefinition="text")
     private String description;
+
     private int inStockNumber;
 
     @Transient

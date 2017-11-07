@@ -3,10 +3,11 @@ package com.bookstore.service.impl;
 
 import com.bookstore.domain.BillingAddress;
 import com.bookstore.domain.UserBilling;
+import com.bookstore.service.api.BillingAddressService;
 import org.springframework.stereotype.Service;
 
 @Service
-public class BillingAddressServiceImpl implements BillingAddressService{
+public class BillingAddressServiceImpl implements BillingAddressService {
 
     public BillingAddress setByUserBilling(UserBilling userBilling, BillingAddress billingAddress) {
         billingAddress.setBillingAddressName(userBilling.getUserBillingName());

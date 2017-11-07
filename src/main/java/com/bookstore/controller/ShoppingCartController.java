@@ -4,10 +4,11 @@ import com.bookstore.domain.Book;
 import com.bookstore.domain.CartItem;
 import com.bookstore.domain.ShoppingCart;
 import com.bookstore.domain.User;
-import com.bookstore.service.impl.BookService;
-import com.bookstore.service.impl.CartItemService;
-import com.bookstore.service.impl.ShoppingCartService;
-import com.bookstore.service.impl.UserService;
+import com.bookstore.service.api.UserService;
+import com.bookstore.service.api.CartItemService ;
+import com.bookstore.service.api.ShoppingCartService ;
+import com.bookstore.service.api.BookService ;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

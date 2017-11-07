@@ -11,14 +11,10 @@ import org.springframework.stereotype.Component;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.Context;
 
-
 import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 import java.util.Locale;
 
-/**
- * Created by VAlentine Ezugu on 8/5/2017.
- */
 @Component
 public class MailConstructor {
 

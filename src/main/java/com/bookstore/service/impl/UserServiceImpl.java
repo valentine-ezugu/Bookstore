@@ -2,9 +2,9 @@ package com.bookstore.service.impl;
 
 import com.bookstore.domain.*;
 import com.bookstore.domain.security.PasswordResetToken;
-import com.bookstore.domain.security.Role;
 import com.bookstore.domain.security.UserRole;
 import com.bookstore.repository.*;
+import com.bookstore.service.api.UserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,6 +16,7 @@ import java.util.List;
 import java.util.Set;
 
 @Service
+@javax.transaction.Transactional
 public class UserServiceImpl implements UserService {
 
     private static final Logger Log = LoggerFactory.getLogger(UserService.class);
@@ -126,7 +127,6 @@ public class UserServiceImpl implements UserService {
             }
         }
     }
-
 
     @Override
     public void setUserDefaultPayment(Long userPaymentId, User user) {

@@ -2,12 +2,11 @@ package com.bookstore.service.impl;
 
 import com.bookstore.domain.UserPayment;
 import com.bookstore.repository.UserPaymentRepository;
+import com.bookstore.service.api.UserPaymentService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-/**
- * Created by Pc on 8/26/2017.
- */
+
 @Service
 public class UserPaymentServiceImpl implements UserPaymentService {
     @Autowired

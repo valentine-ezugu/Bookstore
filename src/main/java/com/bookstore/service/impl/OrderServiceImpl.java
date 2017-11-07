@@ -2,6 +2,8 @@ package com.bookstore.service.impl;
 
 import com.bookstore.domain.*;
 import com.bookstore.repository.OrderRepository;
+import com.bookstore.service.api.CartItemService;
+import com.bookstore.service.api.OrderService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

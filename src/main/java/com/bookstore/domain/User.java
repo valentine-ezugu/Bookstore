@@ -1,12 +1,10 @@
 package com.bookstore.domain;
 
 import com.bookstore.domain.security.Authority;
-import com.bookstore.domain.security.Role;
 import com.bookstore.domain.security.UserRole;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
-
 import javax.persistence.*;
 import java.util.Collection;
 import java.util.HashSet;
@@ -15,7 +13,7 @@ import java.util.Set;
 
 
 @Entity
-public class User  implements UserDetails{
+public class User implements UserDetails{
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
@@ -26,9 +24,9 @@ public class User  implements UserDetails{
 
     private String password;
 
-    private String firstname;
+    private String firstName;
 
-    private String lastname;
+    private String lastName;
 
     @Column(name = "email",nullable =false,updatable= false)
     private String email;
@@ -63,9 +61,9 @@ public class User  implements UserDetails{
     }
 
     public Long getId() {
-
         return id;
     }
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -86,20 +84,20 @@ public class User  implements UserDetails{
         this.password = password;
     }
 
-    public String getFirstname() {
-        return firstname;
+    public String getFirstName() {
+        return firstName;
     }
 
-    public void setFirstname(String firstname) {
-        this.firstname = firstname;
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 
-    public String getLastname() {
-        return lastname;
+    public String getLastName() {
+        return lastName;
     }
 
-    public void setLastname(String lastname) {
-        this.lastname = lastname;
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
     }
 
     public String getEmail() {

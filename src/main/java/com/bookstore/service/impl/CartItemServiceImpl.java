@@ -3,6 +3,7 @@ package com.bookstore.service.impl;
 import com.bookstore.domain.*;
 import com.bookstore.repository.BookToCartItemRepository;
 import com.bookstore.repository.CartItemRepository;
+import com.bookstore.service.api.CartItemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -13,7 +14,7 @@ import java.util.List;
  * Created by Pc on 9/8/2017.
  */
 @Service
-public class CartItemServiceImpl implements CartItemService{
+public class CartItemServiceImpl implements CartItemService {
 
     @Override
     public List<CartItem> findByShoppingCart(ShoppingCart shoppingCart) {

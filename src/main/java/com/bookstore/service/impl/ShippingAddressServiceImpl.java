@@ -2,6 +2,7 @@ package com.bookstore.service.impl;
 
 import com.bookstore.domain.ShippingAddress;
 import com.bookstore.domain.UserShipping;
+import com.bookstore.service.api.ShippingAddressService;
 import org.springframework.stereotype.Service;
 
 @Service
